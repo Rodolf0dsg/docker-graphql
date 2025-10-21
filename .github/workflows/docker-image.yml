@@ -27,7 +27,7 @@ jobs:
         
     - name: Build Docker image
       run: |
-        docker build -t rodolfodsg/docker-graphql:0.0.2 .
+        docker build -t rodolfodsg/docker-graphql:0.0.2 --network host .
         
     - name: Push Docker image
       run: |
